@@ -1,0 +1,43 @@
+.container{
+    display: grid;
+    height:100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+    "leftsidebar1 container1 rightsidebar"
+    "leftsidebar2 container2 "
+    ;
+      
+
+   
+}
+#leftsidebar1{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    grid-area: leftsidebar1;
+
+}
+#container1{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    grid-area: container1;
+}
+#rightsidebar{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    grid-area: rightsidebar;
+}
+#leftsidebar2{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    grid-area: leftsidebar2;
+}
+#container2
