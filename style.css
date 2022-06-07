@@ -1,8 +1,15 @@
+header{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
 .container{
     display: grid;
     height:100vh;
+    border-top: 2px;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 5fr 4fr;
+    grid-template-rows:;
     grid-template-areas:
     "leftsidebar1 container1 rightsidebar"
     "leftsidebar2 container2 "
@@ -12,32 +19,80 @@
    
 }
 #leftsidebar1{
-    background-color: white;
-    font-family: 'Times New Roman', Times, serif;
-    justify-content: center;
-    align-items: center;
-    grid-area: leftsidebar1;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
 
 }
 #container1{
-    background-color: white;
-    font-family: 'Times New Roman', Times, serif;
-    justify-content: center;
-    align-items: center;
-    grid-area: container1;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
 }
 #rightsidebar{
-    background-color: white;
-    font-family: 'Times New Roman', Times, serif;
-    justify-content: center;
-    align-items: center;
-    grid-area: rightsidebar;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+
 }
 #leftsidebar2{
-    background-color: white;
-    font-family: 'Times New Roman', Times, serif;
-    justify-content: center;
-    align-items: center;
-    grid-area: leftsidebar2;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+
 }
-#container2
+img{
+    width: 500px;
+    height: 300px;
+}
+.end{
+    border-bottom: 2px solid black;
+    
+
+}
+#politics{
+    background-color: yellow;
+    height: 5vh;
+    grid-area: politics;
+
+}
+#technology{
+    background-color: blue;
+    height:5vh;
+    grid-area: technology;
+}
+#opinion{
+    background-color: green;
+    height: 5vh;
+    grid-area: opinion;
+}
+#locals{
+    background-color: brown;
+    height: 5vh;
+    grid-area: locals;
+}
+#opinion{
+    background-color: blueviolet;
+    height: 5vh;
+    grid-area: opinion;
+}
+#sports{
+    background-color: aqua;
+    height: 10vh;
+    grid-area: sports;
+}
+@media(max-width:576px){
+    .container{
+        grid-template-columns:1fr;
+        grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr;
+        grid-templete-areas:
+        "leftsidebar1"
+        "container1"
+        "rightsidebar"
+        "leftsidebar2"
+        "container2"
+    }
+}
